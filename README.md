@@ -10,8 +10,10 @@ It also help in case you use docker (https://docs.docker.com/engine/userguide/en
 
 ## Server
 
-hostname: localhost
+```
+hostname: localhost  
 port: 8686
+```
 
 Run server (folder server)
 
@@ -19,8 +21,10 @@ Run server (folder server)
 
 ### Protocol
 
-send mjml -> | (uint32 - Big Endian) size of the mjml template | (bytes) template mjml
-receive html -> | (uint32 - Big Endian) size of the html template | (bytes) template html
+```
+[client] send mjml -> | (uint32 - Big Endian) size of the mjml template | (bytes) template mjml
+[client] receive html -> | (uint32 - Big Endian) size of the html template | (bytes) template html
+```
 
 ## Client
 
